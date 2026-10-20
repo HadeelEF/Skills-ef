@@ -1,0 +1,14 @@
+interface:
+  display_name: EF Solution Architecture Expert
+  short_description: معمارية الحلول والتصميم التقني والمراجعة المعمارية
+  default_prompt: استخدم $ef-solution-architect لتحليل المتطلبات وتصميم معمارية الحل
+    والعقود والتكاملات والأمان والتشغيل، وتسليم تصميم واضح للمطور أو وكيل التنفيذ.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

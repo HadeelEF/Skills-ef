@@ -1,0 +1,15 @@
+interface:
+  display_name: EF Business & Systems Analysis Expert
+  short_description: تحليل الأعمال والنظم وإدارة المنتج وScrum وهندسة العمليات
+  default_prompt: استخدم $ef-ba-sa لإنجاز تحليل الأعمال والنظم والمتطلبات، وإدارة
+    المنتج وملكيته وBacklog وScrum، وتسليم النماذج والوثائق والقرارات المترابطة بحسب
+    نطاق المهمة.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,25 @@
+interface:
+  display_name: ef frontend developer
+  short_description: 'Senior frontend architecture and implementation in React.js,
+    TypeScript,
+
+    semantic HTML and advanced CSS for Environment Fund (EF / صندوق البيئة).
+
+    Use to propose architecture and libraries, build accurate Arabic/English
+
+    interfaces from requirements, Markdown UX/UI or Figma, debug React or layout
+
+    behavior, improve performance, review code or evolve an
+
+    existing frontend. Make evidence-based technical decisions in the project''s
+
+    stack; apply ef-brand-guidelines and consume ef-ui-ux-designer handoffs.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

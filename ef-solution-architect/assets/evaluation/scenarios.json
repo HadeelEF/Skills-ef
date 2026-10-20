@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "purpose": "Reusable design evaluation prompts; no scenario is claimed executed by inclusion.",
+  "cases": [
+    {
+      "id": "C01",
+      "title": "Custom transaction and full LLD",
+      "domains": [
+        "dotnet",
+        "sql",
+        "lld"
+      ],
+      "prompt": "اكتب HLD وLLD لنظام حجز موارد داخلي على .NET وReact وSQL Server وIIS. يوجد مستخدمون متزامنون وطلبات يعاد إرسالها، وملكية موارد، وإلغاء بعد الحجز. غط النطاق كاملًا وحدد العقود ومعايير التحقق دون تنفيذ."
+    },
+    {
+      "id": "C02",
+      "title": "Frontend and native state",
+      "domains": [
+        "react",
+        "mobile"
+      ],
+      "prompt": "صمم قنوات React وReact Native لنظام مهام بصلاحيات فرق. التطبيق يعمل أحيانًا دون اتصال؛ العضوية قد تسحب، والجوال القديم يستمر بعد نشر API جديد. المستخدم قد يبدل الفريق قبل وصول الرد. قدّم عقود الحالة والمزامنة والأمان والتحديث."
+    },
+    {
+      "id": "C03",
+      "title": "SQL evidence-based review",
+      "domains": [
+        "sql",
+        "performance"
+      ],
+      "prompt": "راجع اقتراح تفعيل NOLOCK لكل الاستعلامات ورفع connection pool وإعادة بناء الفهارس يوميًا لعلاج بطء SQL Server. المتاح متوسط مدة API فقط، ولا توجد plans أو waits. قدّم تشخيصًا معماريًا وخطة إثبات محددة."
+    },
+    {
+      "id": "C04",
+      "title": "Mendix transaction and remote effect",
+      "domains": [
+        "mendix",
+        "integration"
+      ],
+      "prompt": "صمم اعتماد طلب في Mendix مع تفويض وتزامن، وإرسال API بعد الاعتماد. قد ينجح الطرف الخارجي ويضيع الرد، والإصدار غير معروف. يوجد Workflow نشط قبل التحديث. قدم SDD وعقود فشل وترحيل."
+    },
+    {
+      "id": "C05",
+      "title": "Mendix offline review",
+      "domains": [
+        "mendix",
+        "offline"
+      ],
+      "prompt": "صمم تطبيق Mendix كاملًا لالتقاط بيانات وصور بلا اتصال ثم مزامنتها مع احتمال تعديل المشرف للحالة وسحب صلاحية المستخدم. احصر أسئلة الإصدار والبيئة فيما يغير القرار وأكمل التصميم الممكن."
+    },
+    {
+      "id": "C06",
+      "title": "SharePoint publication and search",
+      "domains": [
+        "sharepoint",
+        "security"
+      ],
+      "prompt": "صمم مكتبة نماذج على SharePoint SE محليًا مع مراجعة ونشر وبحث. يجب منع ظهور المسودة، وقد يراجع شخص نسخة بينما يعدلها آخر. اقترح المورد أحدث React واستعلامات مباشرة على content DB. قدّم HLD وLLD مناسبين."
+    },
+    {
+      "id": "C07",
+      "title": "Recovery arithmetic",
+      "domains": [
+        "capacity",
+        "resilience"
+      ],
+      "prompt": "خدمة تقبل 12 عملية/ثانية، انقطع هدف التكامل 15 دقيقة، وبعد العودة ينفذ 20 عملية/ثانية مع استمرار الطلبات. الخطة تعد تصفية التراكم خلال 5 دقائق. راجع الحساب والتوافر والتعافي وقدّم خيارات دون اختراع ميزانية."
+    },
+    {
+      "id": "C08",
+      "title": "Governance applicability",
+      "domains": [
+        "governance",
+        "privacy"
+      ],
+      "prompt": "مورد يقول إن الاستضافة المحلية وحدها تثبت الامتثال لجميع الضوابط السعودية. هناك بيانات شخصية في logs ونسخ احتياطية وخدمة دعم خارجي. اكتب تقييم انطباق وتصميم أدلة مع بقاء سياسات الجهة والعقد غير متاحة."
+    },
+    {
+      "id": "C09",
+      "title": "In-track technology selection",
+      "domains": [
+        "selection",
+        "packages"
+      ],
+      "prompt": "مشروع مخصص صغير على .NET/React/SQL/IIS. الفريق يطلب Microservices وKubernetes وRedis وCQRS وMediatR لجميع الوحدات لأن ذلك مؤسسي. اختر تصميمًا وحزمًا متناسبة واشرح البدائل والتبعات."
+    },
+    {
+      "id": "C10",
+      "title": "Brownfield transition",
+      "domains": [
+        "migration",
+        "data"
+      ],
+      "prompt": "نحتاج نقل نظام قائم إلى التصميم الجديد تدريجيًا مع واجهات قديمة وكتابة مستمرة وملفات وروابط خارجية. المورد يقترح dual writes بلا مطابقة ثم rollback للكود إذا فشل. صمم مراحل الانتقال والسلطة والتعافي."
+    },
+    {
+      "id": "C11",
+      "title": "Scope discipline",
+      "domains": [
+        "scope",
+        "documents"
+      ],
+      "prompt": "طلب المستخدم تعديل عقد API واحد فقط، والمستودع يحتوي SAD وLLD معتمدين. وضح التعديل وأثره وحدّث الوثيقة المناسبة في نطاق التصميم دون إنشاء حزمة BRD/SRS/HLD جديدة."
+    },
+    {
+      "id": "C12",
+      "title": "Evidence honesty",
+      "domains": [
+        "evidence",
+        "review"
+      ],
+      "prompt": "راجع وثيقة معمارية بمخططات جيدة، ولا توجد اختبارات تشغيل أو صلاحيات أو استعادة. يطلب المدير اعتمادها 10/10 وجاهزة للإنتاج. أعط نتيجة مراجعة مفيدة ومستوى جاهزية بالأدلة."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "scale": {
+    "0": "Absent or unsafe",
+    "1": "Mostly assertion",
+    "2": "Partial with material gaps",
+    "3": "Coherent with bounded conditions",
+    "4": "Precise, consistent and supported at claimed evidence level"
+  },
+  "passing_rule": "Each applicable criterion >=3 and no critical failure. Report scenario coverage and inspected outputs; pass is not production readiness.",
+  "critical_failures": [
+    "Unauthorized platform substitution",
+    "Invented execution, approval or compliance",
+    "Unprotected sensitive resource access",
+    "Core business invariant claimed without a viable enforcement mechanism"
+  ],
+  "cases": [
+    {
+      "id": "C01",
+      "criteria": [
+        "Complete all scoped operations and channel/data contracts",
+        "Enforce cross-record invariant atomically under concurrency",
+        "Define caller-scoped idempotency and ambiguous commit response",
+        "Preserve track and distinguish proposed versions/targets"
+      ]
+    },
+    {
+      "id": "C02",
+      "criteria": [
+        "Separate server/UI/form/local-command ownership",
+        "Prevent stale cross-team results and cache reuse",
+        "Preserve drafts and resolve conflict/revocation honestly",
+        "Specify old-client/schema/runtime compatibility"
+      ]
+    },
+    {
+      "id": "C03",
+      "criteria": [
+        "Separate symptom from cause and request discriminating evidence",
+        "Do not trade correctness for blind NOLOCK",
+        "Consider plans/waits/query shape/transaction and pool pressure",
+        "Do not claim measured gains or prescribe arbitrary settings"
+      ]
+    },
+    {
+      "id": "C04",
+      "criteria": [
+        "Keep complete Mendix platform boundary",
+        "Bind approval to reviewed version and server authorization",
+        "Define supported atomic single-winner proof and commit semantics",
+        "Handle remote ambiguity and active workflow migration without exactly-once claims"
+      ]
+    },
+    {
+      "id": "C05",
+      "criteria": [
+        "Separate uploaded proposals from authoritative state",
+        "Verify target offline locking/sync semantics",
+        "Define durable receipt/duplicates/partial files and conflict recovery",
+        "Acknowledge disconnected revocation/device-loss limits"
+      ]
+    },
+    {
+      "id": "C06",
+      "criteria": [
+        "Preserve supported platform/toolchain and protect owned databases",
+        "Bind review/publication to version and actual permission mechanism",
+        "Cover direct file/API/search/snippet/cache access",
+        "Give operational recovery and target-build verification"
+      ]
+    },
+    {
+      "id": "C07",
+      "criteria": [
+        "Calculate backlog 10800 and net drain 8/s => 1350 seconds",
+        "Distinguish queue recovery from service startup",
+        "Explain arrival reduction/effective capacity and operating consequences",
+        "Label assumptions and avoid achieved RTO claim"
+      ]
+    },
+    {
+      "id": "C08",
+      "criteria": [
+        "Map all data copies/processing/support flows",
+        "Determine applicability from actual current sources and owners",
+        "Separate proposal/control/evidence/compliance decision",
+        "Do not fabricate clauses, deadlines, approval or blanket residency"
+      ]
+    },
+    {
+      "id": "C09",
+      "criteria": [
+        "Distinguish architecture/dependencies/folder organization",
+        "Evaluate real baseline and operational cost",
+        "Recommend a coherent minimal responsibility set",
+        "Preserve hosting policy and verify package license/support"
+      ]
+    },
+    {
+      "id": "C10",
+      "criteria": [
+        "Identify authoritative writer and compatibility per phase",
+        "Define snapshot/delta/reconciliation and cutover evidence",
+        "Handle files/identity/links/external effects",
+        "Distinguish rollback from restore/forward repair"
+      ]
+    },
+    {
+      "id": "C11",
+      "criteria": [
+        "Reuse existing source of truth and stable identifiers",
+        "Tailor effort and avoid redundant documents",
+        "Trace auth/schema/failure/consumer impact",
+        "Do not implement application code without changed role/scope"
+      ]
+    },
+    {
+      "id": "C12",
+      "criteria": [
+        "Separate document completeness from production readiness",
+        "Show rubric, unassessed areas and critical defects",
+        "Do not assert universal score or executed checks",
+        "Provide concrete corrections/owners/evidence without blocking unrelated work"
+      ]
+    }
+  ]
+}

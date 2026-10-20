@@ -1,0 +1,17 @@
+interface:
+  display_name: EF Full-Stack Expert
+  short_description: Principal .NET وReact المؤسسي وSQL Server ومعمارية الأنظمة والتشغيل
+  default_prompt: استخدم $ef-fullstack-expert لتصميم وتنفيذ حل .NET وReact وSQL Server،
+    واختيار الأنماط والحزم، وتوثيق HLD وLLD، وتجهيز IIS أو الحاويات حسب المشروع، مع
+    اختبار العقود والبيانات والمهام والملفات والتدقيق، وتقدير السعة ومصفوفة الفشل،
+    وتشخيص الحوادث ومراجعة الكود والأمان، وبناء واجهات React مؤسسية بحالة خادم ونماذج
+    وصلاحيات وrealtime وعربية/RTL وإتاحة واختبارات، وذكر ما تحقق فعليًا.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

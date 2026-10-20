@@ -1,0 +1,25 @@
+interface:
+  display_name: ef ui ux designer
+  short_description: 'Senior UI/UX design for Environment Fund (EF / صندوق البيئة)
+    websites,
+
+    service portals, operational platforms, dashboards and mobile apps.
+
+    Use to turn requirements into Arabic/English experiences and actionable
+
+    Markdown specifications for AI frontend developers, improve an existing
+
+    experience, or review an implemented interface. Choose the method and depth
+
+    for the assignment; apply ef-brand-guidelines and use Figma when requested
+
+    or useful. Own UX/UI decisions, bilingual behavior and design handoff.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

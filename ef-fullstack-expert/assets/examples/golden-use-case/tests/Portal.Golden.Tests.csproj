@@ -1,0 +1,19 @@
+<!-- Reference shape only. Pin versions after checking NuGet; not restored here. -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="{{verify}}" />
+    <PackageReference Include="Testcontainers.MsSql" Version="{{verify}}" />
+    <PackageReference Include="xunit" Version="{{verify}}" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="{{verify}}" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="{{verify}}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../src/Portal.Golden.csproj" />
+  </ItemGroup>
+</Project>

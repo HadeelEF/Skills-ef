@@ -1,0 +1,21 @@
+interface:
+  display_name: ef brand guidelines
+  short_description: 'Shared Environment Fund (EF / صندوق البيئة) brand guidelines
+    and verified
+
+    assets for PowerPoint, Word, UI/UX, frontend, advertising and graphic design.
+
+    Use when applying, selecting or reviewing EF logos, colors, typography,
+
+    graphics, imagery or branded layouts. Supplies source-backed rules and visual
+
+    examples; pair with the relevant production skill to create the requested work.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,19 @@
+<!-- Reference shape only. Pin package versions to the project's TFM after checking NuGet; not restored here. -->
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="{{verify}}" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="{{verify}}" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="{{verify}}" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="{{verify}}" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="{{verify}}" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="{{verify}}" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="{{verify}}" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="{{verify}}" />
+  </ItemGroup>
+</Project>
